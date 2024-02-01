@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frontend/create.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -41,7 +42,9 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton.icon(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.of(context).push(MaterialPageRoute(builder: (_)=>createScreen()));
+                      },
                       icon: const Icon(Icons.create),
                       label:  const Text('Create'),
                       style: ElevatedButton.styleFrom(
