@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(30),
-                    color: Colors.white24
+                   
                   ),
                 ),
               ),
